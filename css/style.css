@@ -433,7 +433,7 @@ ul {
 }
 .services-card__back-list::before{
     position: absolute;
-    background-image: url(../img/galochka.svg);
+    background-image: url(../img/other/galochka.svg);
     content: '';
     width: 20px;
     height: 20px;
@@ -472,7 +472,7 @@ ul {
 
 .description__TOS {
     padding-top: 120px;
-    background-image: url(../img/Background.png);
+    background-image: url(../img/other/Background.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -517,7 +517,7 @@ ul {
 
 
 .contact-form {
-    background: url(../img/contact-bg.jpg);
+    background: url(../img/other/contact-bg.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     opacity: 0.9;
@@ -570,7 +570,7 @@ ul {
 .contact-form__inner__name-window {
 }
 .contact-heart{
-    background-image: url(../img/Heart.svg);
+    background-image: url(../img/other/Heart.svg);
     height: 16px;
     width: 16px;
     margin-bottom: 3px;
@@ -584,7 +584,7 @@ ul {
 }
 
 .contact-form__inner-text::before{
-    content: url(../img/checked.svg);
+    content: url(../img/other/checked.svg);
     height: auto;
     margin-right: 10px;
 }
@@ -710,7 +710,7 @@ ul {
 }
 /*index-about*/
 .header-about{
-    background: url(../img/about-us-title.png);
+    background: url(../img/other/about-us-title.png);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -857,7 +857,7 @@ ul {
 }
 .review__block-img  {
     padding-left: 20px;
-    background-image: url(../img/3.jpg);
+    background-image: url(../img/services/3.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -897,12 +897,12 @@ ul {
     transition: none;
 }
 .swiper-button-left{
-    background-image: url(../img/arrow-left.svg);
+    background-image: url(../img/other/arrow-left.svg);
     height: 26px;
     width: 26px;
 }
 .swiper-button-right{
-    background-image: url(../img/arrow-right.svg);
+    background-image: url(../img/other/arrow-right.svg);
     height: 26px;
     width: 26px;
 }
@@ -1492,7 +1492,7 @@ ul {
 
 @media(max-width:1250px){
     .services {
-        background-image: url(../img/Background.png);
+        background-image: url(../img/other/Background.png);
         background-size: contain;
         background-position: 10% 70%;
         padding-top: 350px;
