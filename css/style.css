@@ -36,7 +36,7 @@ ul {
 }
                     /*header*/ 
 .header{
-    background: url(../img/background.jpg);
+    background: url(../img/other/background.jpg);
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
