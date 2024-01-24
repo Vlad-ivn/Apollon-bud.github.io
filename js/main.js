@@ -201,6 +201,8 @@ document.addEventListener("DOMContentLoaded", function () {
         xhr.open("POST", telegramURL, true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         xhr.send(JSON.stringify(data));
+
+        window.location.reload();
     });
 });
 
