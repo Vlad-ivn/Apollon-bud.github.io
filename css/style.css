@@ -34,6 +34,38 @@ a {
 ul {
  list-style: none;
 }
+.custom-checkbox-label {
+    line-height: 1.5;
+    position: relative;
+    padding-left: 28px; /* Регулируйте отступ, чтобы изображение было видно */
+    cursor: pointer;
+    display: inline-block;
+}
+
+.real-checkbox {
+    opacity: 0; /* Set opacity to 0 instead of positioning off-screen */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom-checkbox {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 16px; /* Ширина изображения */
+    height: 16px; /* Высота изображения */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/other/unchecked.svg');
+}
+
+.real-checkbox:checked + .custom-checkbox {
+    background-image: url('../img/other/checked-active.svg');
+}
+
+
+
                     /*header*/ 
 .header{
     background: url(../img/other/background.jpg);
