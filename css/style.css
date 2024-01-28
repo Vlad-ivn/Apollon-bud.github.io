@@ -157,7 +157,6 @@ ul {
 
 .header__body-right {
     align-items: center;
-    padding-top: 14px;
     display: flex;
     flex: 1;
     justify-content: flex-end;
