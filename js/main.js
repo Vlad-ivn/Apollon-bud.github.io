@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
         // Проверка, поставлена ли галочка в чекбоксе
-        if (!realCheckbox.checked) {
+        /*if (!realCheckbox.checked) {
             // Если галочка не поставлена, выделить чекбокс красным цветом
             
             checkedBox.style.color = "#FC3300";
@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             // Если галочка поставлена, сбрасываем цвет чекбокса
             checkedBox.style.color = "";
-        }
+        }*/
             
         
             
