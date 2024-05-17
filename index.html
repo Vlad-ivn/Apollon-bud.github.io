@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="#">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>АПОЛЛОН-БУД — Ремонт під ключ</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header" id="header" > 
+                <div class="container">
+                    <div class="header__body">
+                        <div class="header__body-left">
+                            <div class="header__body-left__navigation">
+                                <a class="logo" href="#">
+                                    <img class="logo_img" alt="logo" src="img/other/Icon-logo.png">
+                                </a>
+                                <nav class="header__menu">
+
+                                    <ul class="header__menu-list menu-list__nav">
+                                        <li class="header__menu-list-item-left">
+                                            <a href="#header" class="menu__list-link ">Головна</a>
+                                        </li>
+                                        <li class="header__menu-list-item-left">
+                                            <a href="#services" class="menu__list-link">Послуги</a>
+                                        </li>
+                                        <li class="header__menu-list-item-left">
+                                            <a href="#contact-form" class="menu__list-link">Замовити</a>
+                                        </li>
+                                        <li class="header__menu-list-item-left">
+                                            <a href="#footer" class="menu__list-link">Контакти</a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header__body-right">
+                            <div class="header__body-right__navigation">
+                                <nav class="header__menu" id="menu">
+                                    <ul class="header__menu-list">
+                                        <li class="header__menu-list-item-right">
+                                            <a href="#" class="menu__list-link-2">
+                                                <span class="ul__right-icons">
+                                                    <img class="header_right-icon" src="img/other/nav-phone.svg" alt="Описание изображения">
+                                                </span>
+                                                <div class="ul__right-text">
+                                                    <span class="text-top">Виклик</span>
+                                                    <span class="text-bottom">(405) 555-0128</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <button class="menu__btn" id="burger">
+                                            <span></span><span></span><span></span>
+                                        </button>
+                                        
+                                        <li class="header__menu-list-item-right right-email">
+                                            <a href="#" class="menu__list-link-2">
+                                                <span class="ul__right-icons">
+                                                    <img class="header_right-icon" src="img/other/nav-gmail.svg" alt="Описание изображения">
+                                                </span>
+                                                <div class="ul__right-text">
+                                                    <span class="text-top">Пошта</span>
+                                                    <span class="text-bottom">hello@createx.com</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="header__bottom">
+                        <div class="container">
+                            <p class="header__bottom-main-about">
+                            <a href="index.html"><span class="header__bottom-main-about__span">Головна</span></a>  / <a class="header__bottom-main-about__link" href="index-about.html">Про нас</a>
+                            </p>
+                            <h1 class="header__bottom-title"><a href="#">АПОЛЛОН-БУД</a></h1>
+                            <p class="header__bottom-subtitle">Комплексний ремонт житла та комерції будь-якої складності. Миттєвий затишок: ремонт, що перевершує очікування! Збережемо ваші нерви та час!</p>
+                        </div>
+                    </div>
+                </div>  
+            </header>
+            <main class="main">
+                <section class="list__buttons" >
+                        <div class="container" >
+                            <div class="list__buttons-container" >
+                                <div class="list__buttons-inner">
+                                    <a href="#" class="list__buttons-inner__one button-add_style" data-btn="services-card">
+                                        <img class="list__buttons-inner__icon " src="img/other/or-house.png" alt="" data-btn="services-card">
+                                        <p class="list__buttons-inner__text button-add_style-text "data-btn="services-card"> Наші послуги</p>
+                                    </a>
+                                    <a href="#" class="list__buttons-inner__one" data-btn="servise__general-works">
+                                        <img class="list__buttons-inner__icon" src="img/other/or-pantone.svg" alt="" data-btn="servise__general-works">
+                                        <p class="list__buttons-inner__text" data-btn="servise__general-works">Загальні роботи</p>
+                                    </a>
+                                    <a href="#" class="list__buttons-inner__one" data-btn="servise__FloorAndСeiling">
+                                        <img class="list__buttons-inner__icon"  src="img/other/or-pantone.svg" alt="" data-btn="servise__FloorAndСeiling">
+                                        <p class="list__buttons-inner__text" data-btn="servise__FloorAndСeiling">Підлога та стеля</p>
+                                    </a>
+                                    <a href="#" class="list__buttons-inner__one" data-btn="servise__electric">
+                                        <svg class="list__buttons-inner__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                            <path d="M48 24C48 20.514 46.1618 17.3483 43.2212 15.6097C43.5666 14.2193 43.4353 12.7439 42.8241 11.4052C42.1704 9.97406 41.0377 8.85534 39.6346 8.22394C39.492 6.17259 38.65 4.25737 37.208 2.74491C35.5203 0.974812 33.2435 0 30.7969 0C28.1388 0 25.6596 1.19709 24 3.17737C22.3405 1.19709 19.8613 0 17.2031 0C14.7565 0 12.4797 0.974813 10.792 2.745C9.34997 4.25747 8.508 6.17259 8.36541 8.22403C6.96225 8.85544 5.82947 9.97416 5.17594 11.4053C4.56459 12.744 4.43344 14.2194 4.77881 15.6097C1.83825 17.3483 0 20.514 0 24C0 27.486 1.83825 30.6517 4.77881 32.3903C4.43344 33.7808 4.56469 35.2561 5.17594 36.5947C5.82956 38.0259 6.96234 39.1447 8.36541 39.7761C8.508 41.8274 9.34997 43.7426 10.792 45.2551C12.4797 47.0252 14.7565 48 17.2031 48C19.8613 48 22.3405 46.8029 24 44.8226C25.6596 46.8029 28.1388 48 30.7969 48C33.2435 48 35.5203 47.0252 37.208 45.255C38.65 43.7425 39.492 41.8273 39.6346 39.776C41.0378 39.1446 42.1705 38.0258 42.8241 36.5947C43.4354 35.256 43.5666 33.7807 43.2212 32.3903C46.1618 30.6517 48 27.486 48 24ZM41.1986 30.2812H34.5V26.2389H39.4688C40.2454 26.2389 40.875 25.6093 40.875 24.8327C40.875 24.7214 40.8749 20.7188 40.8749 20.7188C40.8749 19.9422 40.2453 19.3126 39.4687 19.3126C38.692 19.3126 38.0624 19.9422 38.0624 20.7188V23.4264H34.5V20.9889C34.5 19.4381 33.2383 18.1764 31.6875 18.1764H28.875C28.0984 18.1764 27.4688 18.8061 27.4688 19.5827C27.4688 20.3593 28.0984 20.9889 28.875 20.9889H31.6875V30.2812H25.4059V27.75C25.4059 26.9734 24.7763 26.3438 23.9996 26.3438C23.223 26.3438 22.5934 26.9734 22.5934 27.75V30.2812C22.5934 31.8321 23.8551 33.0938 25.4059 33.0938H40.4966C40.6814 33.8653 40.6052 34.6829 40.2656 35.4264C39.8113 36.4212 38.9462 37.1468 37.8918 37.4171C37.2455 37.5829 36.8046 38.1799 36.8364 38.8463C36.9162 40.5184 36.3252 42.1052 35.1723 43.3144C34.0207 44.5222 32.4668 45.1875 30.7969 45.1875C28.519 45.1875 26.434 43.8989 25.4062 41.882V38.9062H27.9375C28.7141 38.9062 29.3438 38.2766 29.3438 37.5C29.3438 36.7234 28.7141 36.0938 27.9375 36.0938H25.4062C23.8554 36.0938 22.5938 37.3554 22.5938 38.9062V41.8819C21.5662 43.8989 19.4812 45.1875 17.2031 45.1875C15.5332 45.1875 13.9793 44.5223 12.8276 43.3143C11.9982 42.4445 11.4616 41.3787 11.2543 40.2269H14.625C16.1758 40.2269 17.4375 38.9652 17.4375 37.4144V35.676H18.6562C19.4329 35.676 20.0625 35.0464 20.0625 34.2698C20.0625 33.4931 19.4329 32.8635 18.6562 32.8635H17.4375V31.125C17.4375 29.5742 16.1758 28.3125 14.625 28.3125H12.1875C11.4109 28.3125 10.7812 28.9421 10.7812 29.7188C10.7812 30.4954 11.4109 31.125 12.1875 31.125H14.625V37.4144C14.625 37.4144 10.1117 37.418 10.1081 37.417C9.05372 37.1467 8.1885 36.4211 7.73428 35.4263C7.27903 34.4294 7.29666 33.2992 7.78294 32.3254C7.95666 31.9773 7.9785 31.5728 7.84322 31.2081C7.70794 30.8434 7.42753 30.551 7.06875 30.4005C4.48313 29.3158 2.8125 26.8034 2.8125 24C2.8125 21.1966 4.48313 18.6842 7.06866 17.5996C7.11019 17.5822 7.15041 17.5624 7.18978 17.5413H9.37491V21.76C9.37491 22.5367 10.0045 23.1663 10.7812 23.1663C11.5578 23.1663 12.1874 22.5367 12.1874 21.76V17.5413H17.4375V24.385C17.4375 25.1617 18.0671 25.7913 18.8438 25.7913C19.6204 25.7913 20.25 25.1617 20.25 24.385V21.8538H21.6203C22.397 21.8538 23.0266 21.2242 23.0266 20.4475C23.0266 19.6709 22.397 19.0413 21.6203 19.0413H20.25V17.5413C20.25 15.9905 18.9883 14.7288 17.4375 14.7288H16.5938V10.9688C16.5938 10.1921 15.9642 9.5625 15.1876 9.5625C14.411 9.5625 13.7813 10.1921 13.7813 10.9688V14.7287H7.46531C7.33162 14.0102 7.42069 13.2603 7.73428 12.5736C8.18859 11.5788 9.05372 10.8533 10.1081 10.5829C10.7544 10.4171 11.1953 9.82012 11.1635 9.15366C11.0837 7.48163 11.6747 5.89481 12.8276 4.68563C13.9793 3.47775 15.5332 2.8125 17.2031 2.8125C19.5528 2.8125 21.6971 4.18341 22.6875 6.31059V11.0625C22.6875 12.6133 23.9492 13.875 25.5 13.875H33C33.7766 13.875 34.4062 13.2454 34.4062 12.4688C34.4062 11.6921 33.7766 11.0625 33 11.0625H32.7188V9.09375C32.7188 8.31713 32.0891 7.6875 31.3125 7.6875C30.5359 7.6875 29.9062 8.31713 29.9062 9.09375V11.0625H25.5C25.5 11.0625 25.4975 5.99962 25.4929 5.95341C26.5483 4.03116 28.5816 2.8125 30.7969 2.8125C32.4668 2.8125 34.0207 3.47775 35.1724 4.68572C36.3253 5.89491 36.9163 7.48163 36.8365 9.15375C36.8047 9.82022 37.2456 10.4172 37.8919 10.583C38.9463 10.8533 39.8115 11.5789 40.2657 12.5737C40.721 13.5706 40.7033 14.7008 40.2171 15.6747C40.0433 16.0227 40.0215 16.4272 40.1568 16.7919C40.2921 17.1566 40.5726 17.449 40.9313 17.5995C43.5169 18.6842 45.1875 21.1966 45.1875 24C45.1875 26.7055 43.6312 29.1395 41.1986 30.2812Z" fill="#FF5A30"
+                                            data-btn="servise__electric"/>
+                                        </svg>
+                                        <p class="list__buttons-inner__text" data-btn="servise__electric">Електрика</p>
+                                    </a>
+                                    <a href="#" class="list__buttons-inner__one" data-btn="servise__walls">
+                                        <img class="list__buttons-inner__icon" src="img/other/or-painting.svg" alt="" data-btn="servise__walls">
+                                        <p class="list__buttons-inner__text" data-btn="servise__walls">Оновлення стін</p>
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                </section>
+                <section class="services" id="services">
+                        <div class="container">
+                            <div class="services-wrap">
+
+                                <!--general-works-->
+                                <!--1-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card-front__for123 ">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/2.jpg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom bottom-card"> 
+                                                <h1 class="services-card__bottom-title">Водопостачання</h1>
+                                                <p class="services-card__bottom-subtitle subt123">Business Centers</p>
+                                                <div class="services-card__detail">
+                                                    <h2 class="services-card__detail-title"><a href="#">VIEW PROJECT</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>     
+                                        <div class="services-card__back">
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Водопостачання</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Проектування і трасування лінії водопроводу з урахуванням ефективності та найкоротшого маршруту.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Фрезерування чи копка штроб в стінах та підлозі для викладання трубопроводу.
+                                                    </list>
+                                                    
+                                                </ul>
+                                            </div>    
+                                        </div>
+                                </div>
+                                <!--2-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card-front__for123 ">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/3.jpg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom bottom-card"> 
+                                                <h1 class="services-card__bottom-title">Каналізація</h1>
+                                                <p class="services-card__bottom-subtitle subt123">Business Centers</p>
+                                                <div class="services-card__detail">
+                                                    <h2 class="services-card__detail-title"><a href="#">VIEW PROJECT</a></h2>
+                                                </div>
+                                            </div>
+                                        </div>     
+                                        <div class="services-card__back">
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Каналізація</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Перегляд та оцінка стану існуючої каналізаційної системи, заміна застарілих чи пошкоджених елементів.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Установка сантехнічних вузлів та точок водовідведення відповідно до проекту.
+                                                    </list>
+                                                </ul>
+                                            </div>    
+                                        </div>
+                                </div>
+                                <!--3-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card-front__for123 ">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/9.jpg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom bottom-card"> 
+                                                <h1 class="services-card__bottom-title">Розведення опалення</h1>
+                                                <p class="services-card__bottom-subtitle subt123">Business Centers</p>
+                                                <div class="services-card__detail">
+                                                    <h2 class="services-card__detail-title"><a href="#">VIEW PROJECT</a></h2>
+                                                </div>
+                                            </div>
+                                        </div>     
+                                        <div class="services-card__back">
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Розведення опалення</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Монтаж системи опалення, включаючи установку трубопроводів та радіаторів.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Підключення системи опалення до обраного джерела тепла, оптимальна роботи всієї опалювальної системи.
+                                                    </list>
+                                                </ul>
+                                            </div>    
+                                        </div>
+                                </div>
+                                <!--4-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card__front">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/01b9b501a4bc0912e197c902d3046f7716095811.jpeg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom"> 
+                                                <h1 class="services-card__bottom-title">Монтаж мебелі</h1>
+                                                <p class="services-card__bottom-subtitle">Business Centers</p>
+                                            </div>
+                                        </div>     
+                                        <div class="services-card__back">
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Монтаж мебелі</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Монтаж різноманітних меблів для створення функціональних та естетичних інтер'єрів.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Реалізація індивідуальних замовлень та монтаж меблів, що базуються 
+                                                        на консультаціях з дизайну, для створення унікальних та задовольняючих 
+                                                        потреби клієнтів інтер'єрів.
+                                                    </list>
+                                                    
+                                                </ul>
+                                            </div>    
+                                        </div>
+                                </div>
+                                <!--5-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card__front">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/15afa557eadd11dc30d006592bcb4eac9c89d56e_2023-01-01-131339_ovwu.jpeg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom"> 
+                                                <h1 class="services-card__bottom-title">Монтаж вікон та дверей</h1>
+                                                <p class="services-card__bottom-subtitle">Business Centers</p>
+                                            </div>
+                                        </div>     
+                                        <div class="services-card__back">
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Монтаж вікон та дверей</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Професійна установка вікон з урахуванням ефективності теплоізоляції та естетичного вигляду приміщення.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Установка дверей з врахуванням звукоізоляції, стилю, приміщення та безпеки. 
+                                                    </list>
+                                                </ul>
+                                            </div>    
+                                        </div>
+                                </div>
+                                <!--6-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                        <div class="services-card__front">
+                                            <div class="services-card__top">
+                                                <a href="javascript:void(0)" class="services-card__link" >
+                                                    <img src="img/services/15e1d326c226687c2f55ae84b79f101efd1c9642.jpeg" alt="" class="services-card__img">
+                                                </a>    
+                                            </div>   
+                                            <div class="services-card__bottom"> 
+                                                <h1 class="services-card__bottom-title">Утеплення стін та покрівлі</h1>
+                                                <p class="services-card__bottom-subtitle">Business Centers</p>
+                                            </div>
+                                        </div>
+                                        <div class="services-card__back">    
+                                            <div class="services-card__back-container">
+                                                <!-- Back side content goes here -->
+                                                <h1>Утеплення стін та покрівлі</h1>
+                                                <ul class="services-card__back-ul">
+                                                    <list class="services-card__back-list">
+                                                        Професійна ізоляція стін для збереження тепла та зниження енерговитрат.
+                                                    </list>
+                                                    <list class="services-card__back-list">
+                                                        Установка ізоляції на покрівлю для підвищення теплоізоляції та захисту від атмосферних впливів. 
+                                                    </list>
+                                                </ul>
+                                            </div> 
+                                        </div>     
+                                </div>
+                                <!--7-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/191132149e6bbd1e577be633109ed56e6a5f8f2d.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Укладання кабелів</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Укладання кабелів</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Монтаж та укладання електричних кабелів для забезпечення безперебійного живлення та безпеки.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Прокладання кабелів для комп'ютерних мереж, забезпечення стабільного підключення. 
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--8-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/195a51253018dec23367e201a4bf43b1a3603be3_2023-01-02-175501_zxks.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Системи кондиціонування</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Кондиціонування</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Установка систем кондиціонування для забезпечення комфорту та ефективного охолодження приміщень.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Обслуговування та виконання ремонтних робіт для підтримки ефективності та надійності систем кондиціонування.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--9-->
+                                <div class="services-card servise__general-works " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/2375ebac3150ec6d618ffbe488b659c765ddf9ed.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Вентиляція</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Вентиляція</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Установка вентиляційних систем для забезпечення чистого та свіжого повітря у приміщенні.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Обслуговування та очищення вентиляційних систем для забезпечення їхньої ефективності та відсутності забруднень.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                </div>
+
+                                
+                                <!--СТЕЛЯ І ПІДЛОГА-->
+                                <!--10-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/2b59c5383b9caf5d18508e11ab1992f63af5eb6b_2023-01-01-123715_rtam.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Натяжні стелі</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Натяжні стелі</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Установка натяжних стель для створення сучасного та естетичного дизайну приміщення.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Надання різноманітних варіантів дизайну та кольорів натяжних стель для відповіді на індивідуальні побажання клієнта.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <!--11-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/343570fe14605488e8f4b2af18870c85f37f94b0_2023-01-02-175003_oavp.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Декоративні стелі</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Декоративні стелі</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Встановлення вишуканих та стильних декоративних стель для надання приміщенню естетичного вигляду.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Надання різноманітних варіантів декору та дизайну для відповіді на індивідуальні смаки та стиль клієнта.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--12-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/3f4c9b706fed13deb9feb5ef040fddf4a84c92f8_2023-01-02-172549_fqeu.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Роботи з акустикою</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Роботи з акустикою</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Розробка індивідуальних акустичних проектів для оптимізації звукового середовища у приміщенні.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Налаштування аудіообладнання та звукових систем для досягнення оптимальної якості звуку.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--13-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/48864b1371262f59172dc812939a3199db26a9d6.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Монтаж освітлення</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Монтаж освітлення</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Установка освітлювальних систем з урахуванням дизайну та функціональних потреб приміщення.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Встановлення декоративних світильників для створення атмосфери та підкреслення дизайну приміщення.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--14-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/4de7c02f6ab5c405d6d4b15c408445c1856f22d4.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Заливка підлоги</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Заливка підлоги</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Грунтування та вирівнювання основи перед заливкою підлоги для забезпечення рівності та стабільності.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Монтаж систем обігріву підлоги для комфортного клімату та запобігання холоду.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--15-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/5e675c4fa6f644fa7908755615b9dd6807c0c0b6_2023-01-01-130209_naje.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">  Самовирівнююча стяжка</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Детальніше </h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Грунтування та вирівнювання основи для створення ідеальної поверхні для заливки.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Рівномірне та точне нанесення самовирівнюючого розчину для створення гладкої та рівної стяжки.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--16-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/626b132f06cb96b03939b12ecc65443267140952.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Підлоговий обігрів</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Підлоговий обігрів</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Розробка індивідуального проекту для оптимального розташування та розрахунку системи підлогового обігріву.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Установка трубопроводів або обігрівальних матів за схемою, розробленою в проекті.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--17-->
+                                <div class="services-card servise__FloorAndСeiling" style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/6761050dea73442f66eba71327e363c1813636c1_2023-01-02-175249_fksm.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Підлогові матеріали</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Детальніше </h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Консультації та вибір відповідних матеріалів для покриття, враховуючи функціональність та дизайн.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Професійне укладання підлогових матеріалів з урахуванням технологій та дизайну.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                <!--ЕЛЕКТРИКА-->
+                                <!--18-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/7228952b7f1238548d9ae409427a94239e9cbe0d.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Розводка точок освітлення</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>  Розводка точок освітлення</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Розробка плану розведення точок освітлення з урахуванням дизайну та функціональних особливостей приміщення.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Монтаж електропроводки для точок освітлення згідно з розробленим проектом.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--19-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/7c1a8812aa31585a2b522c676d22c3ec2527eba1.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Розводка розп. коробок та автоматів</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Детальніше</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Професійний монтаж автоматів, вводів та інших захисних елементів у відповідності до розробленого плану.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Розводка електропроводки від розподільних коробок до автоматів та відводів для забезпечення правильного з'єднання.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--20-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/7c1a8812aa31585a2b522c676d22c3ec2527eba1.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Розводка точок розеток і вимикачів</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Детальніше</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Монтаж електропроводки для розеток та вимикачів відповідно до розробленого плану.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Підключення електропроводки до розеток та вимикачів, забезпечення правильного з'єднання.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--21-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/7fc28eef69191ce84e3d16059d4cc894c4426e0b_2022-12-31-183639_dvtt.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Монтаж електроприладів</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Монтаж електроприладів</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Проведення пусконалагодження та тестування електроприладів для перевірки їх ефективності та безперебійної роботи.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Правильне підключення електроприладів до електромережі.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--22-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/85bded34aa570b2e47df0839130862f69a28e134.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title"> Кабельні мережі</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Кабельні мережі</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Розробка плану кабельної мережі, визначення типів кабелів та їх розташування для оптимальної передачі даних.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Професійний монтаж кабелів з дотриманням стандартів та вимог до безпеки.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--23-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/a1541963da9838c02bad0494626a9b231fd57621.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Системи резервного живлення</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Детальніше</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Визначення потреби в системі резервного живлення.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Монтаж системи резервного живлення, включаючи підключення до електричної мережі та інтеграцію з існуючим обладнанням.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--24-->
+                                <div class="services-card servise__electric "  style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/a2d7989e3d1ab6eded8f70c0bdd12614c8ba6702_2022-12-31-204605_bozk.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Розумний будинок</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Розумний будинок</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Підключення та інтеграція систем автоматизації, включаючи безпеку, аудіо- та відеосистеми.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Монтаж смарт-пристроїв, таких як термостати, сенсори безпеки, камери спостереження, розумні розетки та інші.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+
+
+                                <!--Оздоблення стін-->
+                                <!--25-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/a633ac09595a352ba6eecbdc7a27a767e42f9fe6.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Штукатурка та шпаклівка</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Штукатурка та шпаклівка</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Підготовка основи для штукатурно-шпаклювальних робіт, включаючи чищення, грунтування та вирівнювання.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Шпаклювання поверхні для вирівнювання, усунення нерівностей та створення гладкого підготовленого шару.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--26-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/a6f1f7eafe1b7f68cd41beebfd94d595a6d603d5.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Шпалери та венеціанські фактури</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1 class="services-card__back-container-h26"> Детальніше</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Рівномірне нанесення клею та установка шпалер, з урахуванням збігу малюнків та правильного покриття.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Техніки та матеріали для досягнення ефекту мармурованої або текстурної поверхні.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--27-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/aef23482e4d78541f31af1de736d31c70e0e3199.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Фарбування стін</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Фарбування стін</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Вибір відповідного типу фарби, враховуючи матеріал стін, призначення приміщення та вимоги до дизайну.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Рівномірне та професійне нанесення фарби на стіни, з урахуванням двошарового або потрібного покриття.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--28-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/IMG_5087-scaled.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Грунтовка</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Грунтовка</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Очищення поверхні від пилу, бруду та старого покриття для забезпечення кращого зчеплення грунтовки.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Рівномірне та докладне нанесення грунтовки на поверхню за допомогою валика, пензля чи спеціального апарату.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--29-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/IMG_3447-scaled.jpg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Барельєфи та розписи</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Барельєфи та розписи</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Формування барельєфів за вибраним матеріалом (гіпс, дерево, полімерні матеріали) та їх установка.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Виконання розписів з використанням вибраних технік і фарб, що відповідають задуманому дизайну.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--30-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/IMG_1213-scaled.jpg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Гіпсові молдінги</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Гіпсові молдінги</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Професійне лиття гіпсових молдінгів із використанням відповідного гіпсового розчину.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Компетентна установка гіпсових молдінгів на архітектурні елементи, а також фінішна обробка для досягнення бажаного вигляду та гармонії в інтер'єрі.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--31-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/14995404cf3c850957df38780d215673b7444778.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Гіпсокартонні роботи</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Гіпсокартонні роботи</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Професійний монтаж гіпсокартонних перегородок та стін із використанням металевого каркасу.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Шпаклювання та обробка гіпсокартону для готовності до фарбування або обклеювання поверхні.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--32-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/0c88228213d7440f3118350b9927410a33710e6d.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Декоративні панелі</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1>Декоративні панелі</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Професійний монтаж декоративних панелей на підготовлений каркас, забезпечення правильної фіксації та вирівнювання.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Встановлення металевого або дерев'яного каркасу.
+                                                </list>
+                                                
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <!--33-->
+                                <div class="services-card servise__walls " style="display: block;">
+                                    <div class="services-card__front">
+                                        <div class="services-card__top">
+                                            <a href="javascript:void(0)" class="services-card__link" >
+                                                <img src="img/services/0655753318dccd9574ff4869d7fd5a87204200f1.jpeg" alt="" class="services-card__img">
+                                            </a>    
+                                        </div>   
+                                        <div class="services-card__bottom"> 
+                                            <h1 class="services-card__bottom-title">Стінні плити</h1>
+                                            <p class="services-card__bottom-subtitle">Business Centers</p>
+                                        </div>
+                                    </div>     
+                                    <div class="services-card__back">    
+                                        <div class="services-card__back-container">
+                                            <!-- Back side content goes here -->
+                                            <h1> Стінні плити</h1>
+                                            <ul class="services-card__back-ul">
+                                                <list class="services-card__back-list">
+                                                    Встановлення стінових плит (стінових панелей) з різних матеріалів, таких як дерево, ПВХ, МДФ або інші індивідуальні варіанти.
+                                                </list>
+                                                <list class="services-card__back-list">
+                                                    Монтаж декоративних накладок і молдингів для покращення зовнішнього вигляду стінових панелей.
+                                                </list>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                </div>
+
+                                
+                            
+                            </div>    
+                        </div>
+                </section>
+                <section class="load-more" id="load-more">
+                        <div class="container">
+                            <div class="load-more__container">
+                                <div class="load-more__container-inner">
+                                    <img src="img/other/Convert.svg" alt="">
+                                    <p>Більше послуг</p>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="description__TOS"  id="description__TOS">
+                        <div class="container">
+                            <div class="description__TOS-inner" >
+                                <div class="description__TOS-block"  >
+                                    <img class="description__TOS-block-img padding-right" src="img/other/artbreeder-mixer-2023-12-19T00_00_04.372Z (1).jpg" alt="">
+                                    <div class="description__TOS-block-text">
+                                        <h2 class="description__TOS-block-text__title">Електричні роботи</h2>
+                                        <p class="description__TOS-block-text__subtitle">
+                                            Наша компанія - експерт у ремонтних роботах під ключ, надає високоякісні та надійні електричні роботи для квартир та будинків. Ми виконуємо повний спектр електромонтажних послуг, включаючи установку, розгалуження електропроводки, підключення приладів та систем освітлення, гарантуючи відповідність всім стандартам та нормам безпеки.
+
+                                        <br> Наша досвідчена команда спеціалізується в розробці та впровадженні ефективних систем електрозабезпечення, використовуючи сучасне обладнання та матеріали для стабільної та безпечної електроінсталяції. 
+                                        </p>
+                                    
+                                        </div>
+                                </div>
+
+
+                                <div class="description__TOS-block" >
+                                    <div class="description__TOS-block-text padding-left">
+                                        <h2 class="description__TOS-block-text__title">Досконалість підлоги та стелі</h2>
+                                        <p class="description__TOS-block-text__subtitle">
+                                            В нашій компанії ми експерти в повному циклі ремонтних робіт квартир. Наш фокус – високоякісні рішення для підлог та стель. Завдяки передовим матеріалам та технологіям ми гарантуємо надійність та довговічність.
+
+                                            Ми вправно вирішуємо завдання будь-якої складності, включаючи укладання підлогових покриттів та вирівнювання стель. Зосередженість на індивідуальних потребах клієнта визначає оптимальні рішення для створення сучасного та унікального інтер'єру.
+                                        </p>
+                                    </div>
+                                    <img class="description__TOS-block-img" src="img/other/type2.jpg" alt="">
+                                </div>
+
+
+                                <div class="description__TOS-block" >
+                                    <img class="description__TOS-block-img" src="img/other/type3.jpg" alt="">
+                                    <div class="description__TOS-block-text ">
+                                        <h2 class="description__TOS-block-text__title">Загальні роботи</h2>
+                                        <p class="description__TOS-block-text__subtitle">
+                                            Наша команда висококваліфікованих фахівців забезпечує повний цикл ремонтних послуг, починаючи з демонтажу і закінчуючи останніми штрихами декору. Ми розуміємо, наскільки важливо створити комфортне житло для наших клієнтів, тому вміло виконуємо роботи з розташування підлоги, електропроводки, водопостачання та опалення.
+
+                                            Наш досвід дозволяє нам ефективно управляти проектом, координуючи всі етапи робіт, включаючи стяжку, штукатурку та фарбування стін. Ми також забезпечуємо встановлення вікон та дверей, гарантуючи не лише естетичний вигляд, але й високу теплоізоляцію.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="description__TOS-block">
+                                    <div class="description__TOS-block-text padding-left">
+                                        <h2 class="description__TOS-block-text__title">Оновлення стін</h2>
+                                        <p class="description__TOS-block-text__subtitle">
+                                            У нашій компанії ми вкладаємо найвищу міру уваги у кожен етап робіт з оздоблення стін, щоб забезпечити нашим клієнтам найвищий ступінь задоволення. Наші спеціалісти використовують сучасні технології та матеріали для створення естетично приємного та функціонального оформлення квартир. Ми гордимося нашою експертною командою, яка здатна виконувати різноманітні види оздоблення стін, де кожен робочий процес — від вибору кольору до технічного виконання — знаходить відображення нашої високої якості та професіоналізму.
+                                        </p>
+                                    </div>
+                                    <img class="description__TOS-block-img " src="img/other/type4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="contact-form" id="contact-form">
+                        <div class="container">
+                            <div class="contact-form__container">
+                                <div class="contact-form__inner">
+                                    <h1 class="contact-form__inner-title">
+                                        Замовити якісний ремонт!
+                                    </h1>
+                                    <form id="telegramForm" onsubmit="">
+                                        <!--Name-->
+                                        <div class="contact-form__inner__main contact-name">
+                                            <div class="contact-form__inner__name-title">
+                                                Ім'я*
+                                            </div>
+                                            <div class="input-container">
+                                                <input type="text" name="name" class="input-field" placeholder="Введіть Ваше ім'я" autocapitalize="words" 
+                                                required autocomplete="off" oninvalid='this.setCustomValidity("Заповніть  обов`язкове поле")' oninput="setCustomValidity('')">
+                                            </div>
+                                        </div>
+                                        <!--Phone-->    
+                                        <div class="contact-form__inner__main">
+                                            <div class="contact-form__inner__name-title">
+                                                Телефон*
+                                            </div>
+                                            <div class="input-container">
+                                                <input type="tel" name="phone" class="input-field" placeholder="Введіть Ваш номер телефона" autocapitalize="words" 
+                                                required autocomplete="off" oninvalid='this.setCustomValidity("Заповніть  обов`язкове поле")' oninput="setCustomValidity('')">
+                                            </div>
+                                        </div>
+                                        <!--Email-->
+                                        <div class="contact-form__inner__main">
+                                            <div class="contact-form__inner__name-title">
+                                                Пошта
+                                            </div>
+                                            <div class="input-container">
+                                                <input type="text" name="email" class="input-field" placeholder="Введіть Вашу пошту" autocapitalize="words" autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <!--Message-->
+                                        <div class="contact-form__inner__main">
+                                            <div class="contact-form__inner__name-title">
+                                                Повідомлення
+                                            </div>
+                                            <div class="input-container">
+                                                <textarea name="comment" class="input-field" placeholder="Введіть Ваше повідомлення"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <label class="custom-checkbox-label">
+
+                                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+                                            <span class="custom-checkbox"></span> 
+                                            Я погоджуюсь отримувати повідомлення від компанії<br> <span class="Apollon-bud"> Apollon-bud.</span>
+                                            
+                                        </label>
+                                        
+                                        
+                                        
+                                        <div class="contact-form__inner__button-container">
+                                            <button type="submit" id="submit-button" name="formSubmit" class="submit-button">Відправити</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </main>    
+            <footer class="footer" id="footer">
+                <div class="container" >
+                    <div class="footer__inner">
+                        <div class="footer__inner-text-logo">
+                            <img class="logo_img footer-logo" src="img/other/icon-logo-footer.png" alt="">
+                            <p class="footer__inner-text-logo inner-text-logo-padding"> 
+                                "Apollon-bud" - досвідчена будівельна компанія в Україні з 2000 року. Наш колектив гордиться високим рівнем послуг, забезпечуючи якісний ремонт та надійний сервіс. Наша місія встановлювати найвищі стандарти у галузі ремонту, надаючи функціональні та естетично привабливі рішення. Ми постійно удосконалюємо навички та використовуємо новітні технології для досягнення ремонтних цілей. Звертайтеся до "Apollon-bud" - вашого партнера у створенні затишку в будинку чи офісі, гарантуємо індивідуальний підхід, якість та своєчасну реалізацію проектів. 
+                            </p>
+                        </div>
+                        <div class="footer__inner-detail">
+                            <div class="footer__inner-detail__container">
+                                <div  class="footer__inner-detail__left">
+                                    <h2 class="footer__inner-detail-h">Головний офіс</h2>
+                                    <p class="footer__inner-detail__text"> <span class="head-oficce_span">Місцезнаходження:&nbsp; </span>м. Житомир</p>
+                                    <p class="footer__inner-detail__text"> <span class="head-oficce_span">Контактний телефон:&nbsp; </span>(067) 43 43 3454</p>
+                                    <p class="footer__inner-detail__text"> <span class="head-oficce_span">Елетронна пошта:&nbsp; </span>ae00@mail.aliexpress.com</p>
+                                </div>
+                                
+                                <div class="footer__inner-detail__center">
+                                    <h2 class="footer__inner-detail-h">Хто ми є</h2>
+                                    <p class="footer__inner-detail__text"><a href="./index-about.html">Про нас</a></p>
+                                    <p class="footer__inner-detail__text"><a href="#description__TOS">Опис пропозицій</a></p>
+                                    <p class="footer__inner-detail__text"><a href="#" onclick="return false">Контакти</a></p>
+                                </div>
+
+                                <div class="footer__inner-detail__right">  
+                                    <h2 class="footer__inner-detail-h">Детальніше</h2>
+                                    <p class="footer__inner-detail__text"><a href="#services">Послуги</a></p>
+                                    <p class="footer__inner-detail__text"><a href="#" onclick="return false">Наші проєкти</a></p>
+                                    <p class="footer__inner-detail__text"><a href="./index-about.html#review">Відгуки</a></p>
+                                </div> 
+                            </div>    
+                        </div>
+                        <div class="footer__inner__reserve">
+                            <div class="footer__inner__reserve-block">
+                                    <p class="footer__inner__reserve-text">© Всі права захищені. <br> Розролено з &nbsp;<span class="contact-heart"></span>&nbsp;by Apollon-bud.</p>
+                            </div>
+                            <div class="footer__inner__reserve-button-top">
+                                    <div class="footer__inner__reserve-button-top__text">
+                                        <p>GO TO TOP</p>
+                                    </div>
+                                    <div class="footer__inner__reserve-button-top-arrow">
+                                        <img id="goToTopBtn" class="footer__inner__reserve-button-top__arrow-icon" src="img/other/Up.svg" alt="">
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!--<div class="callback-bt" onclick="scrollToContactForm()">
+                <div class="text-call">
+                  <i class="fas fa-phone"></i>
+                  <span>Заказать звонок</span>
+                </div>
+              </div>
+            </div>    -->
+    </div>
+    <!--<script src="libs/gsap/gsap.min.js" ></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" ></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" ></script>-->
+    <script src="js/main.js" ></script>
+</body>
+</html>
+
