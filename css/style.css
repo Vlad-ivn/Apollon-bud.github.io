@@ -34,7 +34,12 @@ a {
 ul {
  list-style: none;
 }
-
+.none-block {
+    display: none;
+}
+.none-p{
+    display: none;
+}
 .custom-checkbox-label {
     line-height: 1.5;
     position: relative;
@@ -1076,6 +1081,30 @@ transition: 0.3s ease-in-out;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------ADAPTIVE ------------------------------------------ADAPTIVE*/
 /*--------------------------------------------ADAPTIVE ------------------------------------------ADAPTIVE*/
 
@@ -1282,99 +1311,53 @@ transition: 0.3s ease-in-out;
         left: -2px;
     }
 }
-@media  (max-width: 538px){
-    .header__bottom-title{
-        font-size: 44px;
+@media  (max-width: 550px){
+
+    
+    .header {
+        height: 100vh;
+        background-position: 66% 40%;
     }
-    .header__bottom-subtitle{
-        font-size: 10px;
-        max-width: 310px;
+    .header__bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Прижать к левому краю */
+        text-align: left; /* Текст выровнен по левому краю */
+        width: 100%;
+      }
+    .header__bottom-main-about {
+        font-size: 13px;
+        font-size: 2.5vw;
+        padding-top: 22vh;
     }
-}
-@media  (max-width: 514px){
-    .header__bottom-title{
-        font-size: 46px;
+    .header__bottom-title {
+        font-size: 11vw; 
+        width: 90%; /* Ширина заголовка, меняется в зависимости от экрана */
     }
-    .header__bottom-subtitle{
-        font-size: 12px;
-        padding-bottom: 160px;
-        max-width: 280px;
-    }
-    .header__body{
-        padding: 25px 20px 20px 10px;
-    }
-    .header__bottom-subtitle,
-    .header__bottom-main-about,
-    .header__bottom-title{
-        padding-left: 0px;
-    }
-    .header__bottom-main-about{
-        font-size: 11px;
+      
+    .header__bottom-subtitle {
+        font-size: 2.8vw;
+        width: 72%; /* Ширина подзаголовка, меняется в зависимости от экрана */
     }
 }
 
-@media  (max-width: 466px){
-    .header__bottom-title{
-        font-size: 43px;
-    }
-    .header__bottom-subtitle{
-        font-size: 11px;
-        max-width: 295px;
-    }
-    .header__bottom-main-about{
-        font-size: 11px;
-    }
-}
-@media  (max-width: 440px){
-    .header {
-        background-position: 63% 10%;
-    }
-    .header__bottom-title{
-        font-size: 43px;
-    }
-    .header__bottom-subtitle{
-        font-size: 11px;
-        max-width: 290px;
-    }
+@media  (max-width: 450px){
     
-    .header__bottom-main-about{
-        font-size: 10px;
+    .header__bottom-main-about {
+        
+        font-size: 3vw;
+        padding-top: 24vh;
+    }
+    .header__bottom-title {
+        font-size: 13vw; 
+        width: 90%; /* Ширина заголовка, меняется в зависимости от экрана */
+    }
+      
+    .header__bottom-subtitle {
+        font-size: 3.2vw;
+        width: 73%;
     }
 }
-@media  (max-width: 426px){
-    .header {
-        background-position: 64% 10%;
-    }
-    .header__bottom .container{
-         padding: 0 5px;
-    } 
-    .header__bottom-title{
-        font-size: 42px;
-    }
-    .header__bottom-subtitle{
-        font-size: 11px;
-        max-width: 249px;
-        padding-bottom: 200px;
-    }
-    .header__bottom-main-about{
-        font-size: 10px;
-    }
-}
-@media  (max-width: 395px){
-    .header__bottom-title{
-        font-size: 42px;
-        padding-top: 68px;
-    }
-    .header__bottom-subtitle{
-        font-size: 11px;
-        max-width: 260px;
-    }
-    
-    .header__bottom-main-about{
-        font-size: 10px;
-    }
-}
-
 
 /*ADAPTIVE LIST-BUTTONS*/
 
@@ -1476,59 +1459,28 @@ transition: 0.3s ease-in-out;
             padding-bottom: 14px;
         }
 }
-@media  (max-width: 545px){
-    .list__buttons-inner__text {
-        font-size: 12px;
-    } 
-    .list__buttons-inner__one {
-        flex-basis: calc(33.333% - 18px);  /* Distribute into three columns with gap */
-        margin-bottom: 7px;  /* Add margin to create space between rows */
-        padding: 18px 27px;
+@media  (max-width: 550px){
+    .none-block {
+        font-size: 2.5em !important;
+        font-weight: 900;
+        line-height: 1.5;
+        padding: 6vh 2vh 2vh 2vh;
+        display: block;
+        
     }
-    .list__buttons-inner__icon {
-            height: 48px;
-            width: 36px;
-            padding-bottom: 12px;
-        }
-}
-@media  (max-width: 450px){
-    .list__buttons-inner__text {
-        font-size: 12px;
-    } 
-    .list__buttons-inner__one {
-        margin-bottom: 5px; 
-        box-shadow: 
-        0px 4px 4px -4px rgba(30, 33, 44, 0.03), 
-        8px 0px 12px -6px rgba(154, 156, 165, 0.1), 
-        0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
-        0px 80px 80px -20px rgba(154, 156, 165, 0.08),
-        0px 0px 10px rgba(0, 0, 0, 0.3);  
+    .none-p{
+        display: block;
+        padding-bottom: 20vh !important;
+        text-align: justify;
     }
-    .list__buttons-inner__icon {
-        height: 43px;
-        width: 32px;
-        padding-bottom: 11px;
-    }
-    
-}
-@media(max-width:425px){
     .list__buttons-inner {
-        top: -20px;
-    } 
-    .list__buttons-inner__text {
-        font-size: 12px;
-    } 
-}
-
-@media(max-width:425px){
-    .list__buttons-inner__one {
-        padding: 16px 17px;
-        margin-bottom: 5px;  /* Add margin to create space between rows */
+        top: 39vh !important;
     }
-}
-@media(max-width:400px){
+    .list__buttons-container{
+        display: block !important;
+    }
     .list__buttons-inner{
-        gap:18px;
+        display: block !important;
     }
 }
 
@@ -1658,7 +1610,10 @@ transition: 0.3s ease-in-out;
         height: 258px;
     }
     .services {
-        padding-top: 260px;
+        background-image: url(../img/other/Background.png);
+        background-size: contain;
+        background-position: 13% 74%;
+        padding-top: 118vh;
     }
     .services-card {
         width: 297px;
