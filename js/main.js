@@ -6,28 +6,13 @@ let ArrayServicesIsNow = []; /*масив класів з яким працює�
 let lastBlocksInMyArray = []; /*вибірка елементів з масиву ArrayServicesIsNow де перший елемент > 18 і до кінця масиву*/
 let BlocksInUse = []; /*для перевірки */
 
-/*Вибираємо всі 33 блоки  в масив ArrayServicesIsNow*/
+/* Вибираємо всі 33 блоки  в масив ArrayServicesIsNow */
 ArrayServicesIsNow = SelectVisibleWorkBlock(NameServicesIsNow);
 
-/*Передаємо параметр(блоки) ArrayServicesIsNow на перевірку довжини масива*/
+/* Передаємо параметр(блоки) ArrayServicesIsNow на перевірку довжини масива */
 toggleLast15BlocksVisibility(ArrayServicesIsNow);
 
 function toggleLast15BlocksVisibility(myArray) {
-
-    /*function logArrayInfo(arrayName, myArray) {
-        console.log(`Array Name: ${arrayName}`);
-        console.log(`Array Length: ${myArray.length}`);
-
-        BlocksInUse.forEach((block, index) => {
-            console.log(`Element ${index + 1} - Display Style: ${block.style.display}`);
-        });
-
-        console.log('----------------------');
-    }
-
-    logArrayInfo('myArray', myArray); // Logging array information*/
-
-
     if (myArray.length > 18) {
         loadMoreSection.style.display = 'block';
         if (myArray[18].style.display === 'none') {
@@ -38,8 +23,7 @@ function toggleLast15BlocksVisibility(myArray) {
             // Hide the last 15 blocks
             lastBlocksInMyArray = Array.from(myArray).slice(18);
             lastBlocksInMyArray.forEach(block => block.style.display = 'none');
-            console.log("Scrolling to 'services'");
-            ScrollToMyPossition('services');
+            console.log("Hiding the last 15 blocks");
         }
     } else {
         loadMoreSection.style.display = 'none';
@@ -51,7 +35,7 @@ function AllBlocksVisibility(booleanParameter) {
     allBlocks.forEach(block => block.style.display = booleanParameter ? 'block' : 'none');
 };
 
-/*Вертає масив за вибраним імя'м класу */
+/* Вертає масив за вибраним ім'ям класу */
 function SelectVisibleWorkBlock(textParameter) {
     return servicesWrap.querySelectorAll('.' + textParameter);
 };
@@ -63,9 +47,10 @@ loadMoreSection.addEventListener('click', function () {
 function ScrollToMyPossition(myClassName) {
     const element = document.getElementById(myClassName); 
     if (element) {
-        element.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start' 
+        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
         });
         console.log(`Scrolled to ${myClassName}`);
     } else {
@@ -73,22 +58,54 @@ function ScrollToMyPossition(myClassName) {
     }
 }
 
-window.addEventListener("click", function (event) {
+function smoothScrollTo(targetPosition) {
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 800; // Время анимации в миллисекундах
+    let startTime = null;
 
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+
+window.addEventListener("click", function (event) {
     if (event.target.hasAttribute('data-btn')) {
+        console.log(`Button clicked with data-btn: ${event.target.getAttribute('data-btn')}`);
+        
         AllBlocksVisibility(false);
-        NameServicesIsNow = event.target.getAttribute('data-btn')
+        NameServicesIsNow = event.target.getAttribute('data-btn');
         ArrayServicesIsNow = SelectVisibleWorkBlock(NameServicesIsNow);
+        
+        console.log(`New blocks selected: ${ArrayServicesIsNow.length} blocks`);
+        
         ArrayServicesIsNow.forEach(block => block.style.display = 'block');
         toggleLast15BlocksVisibility(ArrayServicesIsNow);
+
+        // Прокрутка к блоку services-wrap после клика на кнопку
+        const offsetTop = servicesWrap.getBoundingClientRect().top + window.pageYOffset;
+
+        console.log(`servicesWrap found. Offset top: ${offsetTop}`);
+
+        // Используем плавную прокрутку с анимацией
+        smoothScrollTo(offsetTop);
+
+        console.log('Scrolling to servicesWrap with animation');
     }
 });
-
-
-
-
-
-
 
 
 /*burger-menu*/
@@ -117,48 +134,6 @@ menuItems.forEach(item => {
         document.body.style.overflow = "visible";
     });
 });
-
-
-
-
-  /*// JavaScript для отслеживания событий прокрутки
-  window.addEventListener('scroll', function() {
-    var footer = document.getElementById('footer');
-    var callbackButton = document.querySelector('.callback-bt');
-
-    // Определение положения блока с id="services" + 100px
-    var footerPosition = footer.offsetTop + 100;
-    var windowPosition = window.scrollY + window.innerHeight;
-
-    // Проверка, достиг ли пользователь блока с id="services" + 100px
-    if (windowPosition > footerPosition) {
-      callbackButton.classList.add('show'); // Показываем кнопку
-    } else {
-      callbackButton.classList.remove('show'); // Скрываем кнопку
-    }
-  });
-
-  // JavaScript для плавной прокрутки к форме
-  function scrollToContactForm() {
-    var contactFormSection = document.getElementById('contact-form');
-    contactFormSection.scrollIntoView({ behavior: 'smooth' });
-  }
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Contact-Form */
 document.addEventListener("DOMContentLoaded", function () {
