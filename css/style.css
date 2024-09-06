@@ -1346,7 +1346,7 @@ transition: 0.3s ease-in-out;
     .header__bottom-main-about {
         
         font-size: 3vw;
-        padding-top: 24vh;
+        padding-top: 22vh;
     }
     .header__bottom-title {
         font-size: 13vw; 
@@ -1483,7 +1483,28 @@ transition: 0.3s ease-in-out;
         display: block !important;
     }
 }
-
+@media  (max-width: 420px){
+    .none-block {
+        font-size: 2.3em !important;
+    }
+    .none-p{
+        padding-bottom: 23vh !important;
+    }
+    .list__buttons-inner {
+        top: 39vh !important;
+    }
+}
+@media  (max-width: 380px){
+    .none-block {
+        font-size: 2.1em !important;
+    }
+    .none-p{
+        padding-bottom: 23vh !important;
+    }
+    .list__buttons-inner {
+        top: 39vh !important;
+    }
+}
 
 /*ADAPTIVE-SERVICES*/
 
