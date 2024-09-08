@@ -111,6 +111,7 @@ window.addEventListener("click", function (event) {
 /*burger-menu*/
 const menuBtn = document.getElementById("burger");
 const headerMenu = document.querySelector(".header");
+const phoneItem = document.querySelector("li.header__menu-list-item-right");
 
 menuBtn.addEventListener("click", function() {
     headerMenu.classList.toggle("open");
@@ -120,14 +121,17 @@ menuBtn.addEventListener("click", function() {
 
     // Додаємо або видаляємо клас залежно від наявності класу "open"
     if (headerMenu.classList.contains("open")) {
+        phoneItem.style.zIndex = "-10";
         body.style.overflow = "hidden";
     } else {
         body.style.overflow = "visible";
+        phoneItem.style.zIndex = "100";
     }
 });
 
 // Додаємо обробник події для елементів меню для приховування меню при кліці
 const menuItems = document.querySelectorAll(".header__menu-list-item-left a");
+const phone = document.querySelector(".header__menu-list-item-right")
 menuItems.forEach(item => {
     item.addEventListener("click", function() {
         headerMenu.classList.remove("open");
