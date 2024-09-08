@@ -1142,6 +1142,9 @@ transition: 0.3s ease-in-out;
 
 /* Styles for screen size up to 900px */
 @media (max-width: 900px) {
+    .header__body {
+        padding: 24px;
+    }
     .menu__btn {
         z-index: 11;
         display: block;
@@ -1192,6 +1195,7 @@ transition: 0.3s ease-in-out;
         display: none;
     }
 
+        
     .menu__list-link {
         display: block;
         padding: 25px 0;
@@ -1238,6 +1242,28 @@ transition: 0.3s ease-in-out;
     .header__bottom-subtitle {
         font-size: 17px;
         max-width: 550px;
+    }
+    .logo{
+        display: none;
+    }
+    .header__menu-list-item-right:last-child{
+        display: none;
+    }
+    .header__menu-list-item-right{
+        display: block; /* Отображаем элемент */
+        position: absolute; /* Абсолютное позиционирование */
+        left: 10px; /* Отступ от левого края экрана */
+        padding-left: 10px;
+        top:22px;
+        z-index: 100; /* Выводим элемент поверх других */
+        font-size: 19px;
+    }
+    .text-top{
+        display: none;
+    }
+    .text-bottom {
+        font-weight: 700;
+        padding: 0;
     }
 }
 
@@ -1634,7 +1660,7 @@ transition: 0.3s ease-in-out;
         background-image: url(../img/other/Background.png);
         background-size: contain;
         background-position: 13% 74%;
-        padding-top: 118vh;
+        padding-top: 123vh;
     }
     .services-card {
         width: 297px;
@@ -1675,6 +1701,9 @@ transition: 0.3s ease-in-out;
     .menu__btn {
         width: 20px;
         height: 20px;
+    }
+    .header__menu-list-item-right{
+        top:18px; 
     }
     .services-card__detail-title {
         padding: 5px 14px;
